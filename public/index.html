@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="/socket.io/socket.io.js"></script>
+  <meta charset="utf-8">
+  <title>Spotify Web API Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Currently Playing</h1>
+    <div id="currentTrack"></div>
+    <a href="" target="_blank"><img id="albumCover" src=""></a>
+  </div>
+
+  <script>
+    const socket = io();
+
+    // Listen for the currentTrack event and update the HTML
+    socket.on('currentTrack', function (track) {
+      document.getElementById('currentTrack').innerHTML = track.track;
+      document.getElementById('albumCover').src = track.albumCover;
+      document.querySelector('#albumCover').parentElement.href = track.trackUrl;
+    });
+  </script>
+</body>
+
+</html>
