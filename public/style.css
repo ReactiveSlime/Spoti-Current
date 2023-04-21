@@ -17,17 +17,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-h2 {
-  font-size: 24px;
-  margin-top: 50px;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
 img, a {
   display: block;
   margin: 0 auto;
@@ -35,12 +24,6 @@ img, a {
   height: 512px;
   border-radius: 5%;
   box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
 #currentTrack {

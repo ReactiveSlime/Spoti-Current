@@ -4,8 +4,8 @@ const SpotifyWebApi = require('spotify-web-api-node');
 const port = 3000;
 
 const spotifyApi = new SpotifyWebApi({
-    clientId: 'CLIENT-ID',
-    clientSecret: 'CLIENT-SECRET',
+    clientId: 'a22aadec759141548e2b46f38e3e1fcd',
+    clientSecret: '16f3e168e716461d9551996f66a41de1',
     redirectUri: 'http://localhost:3000/callback' // Replace this with your own redirect URI
 });
 

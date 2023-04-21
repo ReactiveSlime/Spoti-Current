@@ -2,20 +2,26 @@
 <html>
 
 <head>
+  <!-- Import Socket.io library -->
   <script src="/socket.io/socket.io.js"></script>
+  <!-- Set the character encoding and title of the page -->
   <meta charset="utf-8">
   <title>Spotify Web API Demo</title>
+  <!-- Link to the stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="container">
+    <!-- Add a heading for the currently playing track -->
     <h1>Currently Playing</h1>
+    <!-- Add a container for the track information -->
     <div id="currentTrack"></div>
+    <!-- Add a link and image for the album cover -->
     <a href="" target="_blank"><img id="albumCover" src=""></a>
   </div>
-
   <script>
+    // Create a socket instance
     const socket = io();
 
     // Listen for the currentTrack event and update the HTML
